@@ -6,6 +6,7 @@
   - Đăng nhập/Đăng ký
   - Đăng bài (có thể đăng nhiều ảnh)
   - Bookmark bài đăng
+  
 **Hướng dẫn sử dụng**:
 1. Install Ruby, Rails.
 2. Clone repo từ github về, mở Terminal và thực hiện các lệnh sau:
