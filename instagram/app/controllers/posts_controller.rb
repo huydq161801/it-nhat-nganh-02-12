@@ -8,7 +8,8 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  def create
+# post anh
+  def create 
     @post = current_user.posts.build(post_params)
     if @post.save
       if params[:images]
@@ -24,14 +25,14 @@ class PostsController < ApplicationController
       redirect_to posts_path
     end
   end
-
+# show anh (home)
   def show
     @photos = @post.photos
     @likes = @post.likes.includes(:user)
     
     @is_bookmarked = @post.is_bookmarked(current_user)
   end
-
+# xoa anh
   def destroy
     if @post.user == current_user
       if @post.destroy
@@ -46,7 +47,7 @@ class PostsController < ApplicationController
   end
 
   private
-
+# tim anh theo id
   def find_post
     @post = Post.find_by id: params[:id]
 
@@ -54,7 +55,7 @@ class PostsController < ApplicationController
     flash[:danger] = "Post not exist!"
     redirect_to root_path
   end
-
+# 
   def post_params
     params.require(:post).permit :content
   end

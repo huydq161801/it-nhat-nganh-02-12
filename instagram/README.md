@@ -4,8 +4,17 @@
 
 **Các chức năng của website**:
   - Đăng nhập/Đăng ký
+  - Đăng nhập bằng twitter
   - Đăng bài (có thể đăng nhiều ảnh)
-  - Bookmark bài đăng
+ - Bookmark bài đăng
+  - Tìm kiếm user
+  - CRUD thông tin tài khoản
+---
+**Các kỹ thuật sử dụng**:
+  - Auto suggestion (Jquery auto complete)
+  - Dialog modal (JQuery dialog)
+  - Ajax
+  - TW login
 ---
 **Hướng dẫn sử dụng**:
 1. Install Ruby, Rails.
